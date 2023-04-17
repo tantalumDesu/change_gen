@@ -4,7 +4,7 @@ def convert_gold_to_coins(gold):
     coin_values = {'pp': 1000, 'gp': 100, 'ep': 50, 'sp': 10, 'cp': 1}
     coin_counts = {'pp': 0, 'gp': 0, 'ep': 0, 'sp': 0, 'cp': 0}
     if gold >= 1000000:
-        coin_weight = {'pp': 10*(randint(10,120)/100), 'gp': 20*(randint(10,120)/100), 'ep': 1*(randint(1,120)/100), 'sp': 2*(randint(1,120)/100), 'cp': 1*(randint(1,120)/100)}
+        coin_weight = {'pp': 20*(randint(10,120)/100), 'gp': 20*(randint(10,120)/100), 'ep': 2*(randint(1,120)/100), 'sp': 2*(randint(1,120)/100), 'cp': 1*(randint(1,120)/100)}
     elif gold >= 100000:
         coin_weight = {'pp': 10*(randint(10,120)/100), 'gp': 50*(randint(10,120)/100), 'ep': 1*(randint(1,120)/100), 'sp': 5*(randint(1,120)/100), 'cp': 1*(randint(1,120)/100)}
     elif gold >=10000:

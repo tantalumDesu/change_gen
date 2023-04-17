@@ -32,13 +32,13 @@ def convert_gold_to_coins(gold):
 while True:
     while True:
         try:
-            gold = float(input("\nEnter gold amount (maximum 9999999): "))
-            if gold > 9999999:
-                print("Invalid input. Please enter a number less than 9999999")
+            gold = float(input("\nEnter gold amount (maximum 9999999.99): "))
+            if gold > 9999999.99:
+                print("Invalid input. Please enter a number less than 9999999.99")
                 continue
             print("")
             break
         except (ValueError, IndexError):
-            print("Invalid input. Please choose a valid option.")
+            print("Invalid input. Enter a number between 0.01 and 9999999.99")
             continue
     print(convert_gold_to_coins(gold))

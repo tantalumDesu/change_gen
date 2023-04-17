@@ -12,9 +12,9 @@ def convert_gold_to_coins(gold):
     elif gold >= 1000:
         coin_weight = {'pp': 1*(randint(10, 120)/100), 'gp': 50*(randint(10, 120)/100), 'ep': 1*(randint(1, 120)/100), 'sp': 10*(randint(1, 120)/100), 'cp': 5*(randint(1, 120)/100)}
     elif gold >= 100:
-        coin_weight = {'pp': 1*(randint(10, 120)/100), 'gp': 5*(randint(10, 120)/100), 'ep': 1*(randint(1, 120)/100), 'sp': 2*(randint(1, 120)/100), 'cp': 5*(randint(1, 120)/100)}
+        coin_weight = {'pp': 1*(randint(10, 120)/100), 'gp': 4*(randint(10, 120)/100), 'ep': 1*(randint(1, 120)/100), 'sp': 2*(randint(1, 120)/100), 'cp': 5*(randint(1, 120)/100)}
     else:
-        coin_weight = {'pp': 10*(randint(10, 120)/100), 'gp': 40*(randint(10, 120)/100), 'ep': 20*(randint(1, 120)/100), 'sp': 30*(randint(1, 120)/100), 'cp': 40*(randint(1, 120)/100)}       
+        coin_weight = {'pp': 10*(randint(10, 120)/100), 'gp': 40*(randint(10, 120)/100), 'ep': 20*(randint(1, 120)/100), 'sp': 30*(randint(1, 120)/100), 'cp': 50*(randint(1, 120)/100)}       
     total_copper = int(gold * 100)
     while total_copper > 0:
         options = [coin for coin, value in coin_values.items(
